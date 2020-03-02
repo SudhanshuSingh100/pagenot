@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>page</title>
+ 
+  <style type="text/css">
+      *{
+        padding: 0px;
+        margin:0px;
+        box-sizing: border-box;
+      }
+
+      .header{
+        width: 100%;
+        height: 800px;
+        background-image: url(bg2.jpg);
+        -webkit-background-size:cover;
+        background-size: cover;
+
+      }
+
+      .logo{
+        max-width: 16px;
+        line-height: auto;
+        padding: 8px 9px ;
+        position:fixed;
+        color: orange;
+        font-size: 27px;
+        font-family: cursive;
+      }
+      .navbar{
+        width: 100%;
+        padding: 20px;
+        position:fixed;
+        top:0px;
+        text-align: center;
+        transform: .5s;
+      }
+
+      .navbar ul li{
+        list-style-type:none;
+        display: inline-block;
+        padding: 8px 40px;
+        color: black;
+        font-size:24px;
+        font-family:sans-serif;
+        cursor: pointer; 
+        border-radius: 10px;
+        transition:.5s;
+      }
+
+      .navbar ul li:hover{
+        background: white;
+
+      }
+      .wrapper{
+        position: absolute;
+        top: 65%;
+        left: 25%;
+        transform: translate(-50%,-50%);
+      }
+      .wrapper p{
+        color:#fff;
+        font-size:18px;
+        line-height: 35px;
+      }
+      .wrapper a{
+        background: orange;
+        color: #fff;
+        text-decoration: none;
+        padding: 10px 35px;
+        border-radius: 20px;
+        display:inline-block;
+        margin-top: 30px
+      }
+
+      span:before{
+        content: '';
+        animation: intro infinite 8s;
+      }
+
+      @keyframes intro{
+        from{ 
+          content: 'Freelancer'; 
+        }
+        to{
+          content: 'A FullStack Developer';
+        }
+       } 
+  #outerbox{
+    width: 1400px;
+    overflow: hidden;
+    
+  }
+  #sliderbox{
+    position:relative;
+    width:5600px;
+    animation-name: lastimg;
+    animation-duration:  40s;
+    animation-iteration-count: infinite;
+  }
+  #sliderbox img{
+    float: left;
+  }
+  @keyframes lastimg{
+    0%{
+       left: 0px;
+    }
+    20%
+    {
+      left: 0px;
+    }
+    25%{
+      left: -1400px;
+    }
+    45%{
+      left: -1400px;
+    }
+    50%{
+      left: -2800px;
+    }
+    70%{
+      left: -2800px;
+    }
+    75%{
+      left: -4200px;
+    }
+    95%{
+      left: -4200px;
+    }
+    100%{
+      left: -5600px;
+    }
+  } 
+ </style>
+          <meta charset="utf-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+</head>
+<body>
+  <div class="container-fluid">
+   <!--   nav bar-->
+  <div class="header"  >
+           <div class="navbar" id="nav" > 
+              <h4 class="logo">SUDHANSHU</h4>
+              <ul>
+                   <li >Home</li>
+                   <li >Resume</li>
+                   
+                   <li >Blogs</li>
+                   <li >Contact</li>
+               </ul>
+            </div>
+
+         <section class="wrapper">
+               <div>
+                 <p>Hello!  I  am</p>
+                  <h1 style="font-size: 50px;color: white">Sudhanshu Singh</h1>
+            
+               </div>
+             
+               <div>
+                 <p>I am from India</p>
+                  <h2 style="font-size: 30px;color: white">
+                  <span></span></h2>
+               </div>
+              <br/><br/>
+              <h3><a href="#">Download CV</a></h3>
+
+         </section> 
+         <!--End-Slider -->  
+   </div>
+</div>
+
+	<!--This div is second style="idth : 100% ;height:300px;display : inline-block ;padding-left: 142px"
+    style="idth: 100% ;float: center;padding-left: 25px;display :inline-block ;background-color: skyblue;"-->
+ <div class="container">
+     <div class="row">
+         
+        <div class="col-md-6" >
+          <img src="ravicol_.jpg" class="img-rounded" style="height: 556px;max-width: 545px"
+           alt="MyPhoto">
+        </div>
+                 
+        <div class="col-md-6 jumbotron" style="height: 556px;background-color: cadetblue">
+          <h2>Hi! </h2>
+          <p>I am sudhanshu Singh , a computer science graduate from Aligarh Muslim University</p>
+        <br><br>
+
+        <p>Check My profile on :
+        </p>
+         </div>
+      </div>
+
+     </div>
+
+ </div>
+
+
+
+
+
+
+
+	<div class="container">
+      <div class="row" style="width:100%;height: 250px;">
+        	  <div  class="col-md-4" style="idth:24.5%;height: 250px;background-color: darkblue;"><h2>Part1   </h2>
+            </div>
+            <div class="col-md-4"style="idth:24.5%;height: 250px;background-color: blue;"><h2>see the AMU website</h2></div>
+            <div class="col-md-4"style="idth:24.5%;height: 250px;background-color: background-image: url('itsme.png');background-size: cover"><h2>Part3</h2></div>
+           
+ </div>
+   
+	<!--This div is third-->
+	<div class="container" style=" max-width : 100%;height:480px ;margin-top: 2px;padding: 0px;background-image:url(ma_1.jpg)">
+		
+      <center><h1 style="float: center;">This is Third Div</h1></center>
+
+	</div>
+
+	<!--This div is fourth-->
+	<div class="container" style="margin-top: 150px;margin-bottom: 150px">
+		<center style="font-size: 80px ; "><i>What I Know !!</i></center>
+         <center> <h4>Teaching        *    Programming       *      Public Speaking </h4> </center>
+  
+	</div>
+	
+  <!--This div is second picture part-->
+    
+<div class="container">
+
+    <div id="outerbox">    
+      <div id="sliderbox">
+
+        	<img src="cmp1.jpg" class="container">
+          <img src="meli.jpg" class="container">
+          <img src="ma_1.jpg" class="container">
+          <img src="cmp1.jpg" class="container">
+        </div>
+    </div>
+</div>
+
+
+
+
+<!--This div is for contact-->
+	<div class="container">
+		<center><h1 style="font-size: 75px">Contact Us</h1></center>
+        <center>
+        	<strong>            E-mail  :nsudhanshu100@gmail.com 
+         Mob.no. : 9856985698  
+         Fax   : 7848282
+            </strong>
+        </center> 
+         
+	</div>
+
+
+</body>
+
+
+<script type="text/javascript">
+  var nav = document.getElementById('nav')
+
+  window.onscroll = function(){
+
+      if (window.pageYOffset >754){
+        
+        nav.style.background = "#004aff";
+        nav.style.boxShadow = "0px 7px 9px lightblue";
+      }
+      else{
+        nav.style.background = "transparent";
+        nav.style.boxShadow = "none";
+      }
+  }
+
+
+</script>
+</html>
